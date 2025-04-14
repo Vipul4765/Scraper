@@ -7,6 +7,8 @@ class AlgoScraper:
 
     def __init__(self):
         self.url = "https://prices.algotest.in/straddle-mtm"
+        self.df = pd.DataFrame()
+        self.file_name = 'straddle_heat_map_combined.csv'
         self.headers = {
             "accept": "application/json, text/plain, */*",
             "accept-language": "en-US,en;q=0.9",
@@ -30,14 +32,13 @@ class AlgoScraper:
         self.session = requests.Session()
 
     def generate_date_range(self):
-        # Generate dates from 01-01-2024 to today, excluding weekends (Saturday and Sunday)
         start_date = datetime(2024, 1, 1)
         end_date = datetime.today()
         date_range = []
 
         current_date = start_date
         while current_date <= end_date:
-            if current_date.weekday() < 5:  # Skip weekends
+            if current_date.weekday() < 5:  # Weekdays only
                 date_range.append(current_date.strftime('%Y-%m-%d'))
             current_date += timedelta(days=1)
 
@@ -45,12 +46,12 @@ class AlgoScraper:
 
     def fetch_data_for_date_range(self):
         date_range = self.generate_date_range()
-        self.session.get("https://algotest.in/heatmap", headers=self.headers)  # Get initial cookies
+        self.session.get("https://algotest.in/heatmap", headers=self.headers)  # Initial session
 
         for i, date in enumerate(date_range, start=1):
-            if i % 50 == 0:  # Refresh session after every 50 requests
+            if i % 50 == 0:
                 print("Refreshing session...")
-                self.session = requests.Session()  # Create a new session
+                self.session = requests.Session()
 
             print(f"Fetching data for date: {date}")
             self.payload['start_date'] = date
@@ -59,9 +60,6 @@ class AlgoScraper:
                 response = self.session.post(self.url, headers=self.headers, json=self.payload)
 
                 if response.status_code == 200:
-                    print(f"Status Code: {response.status_code}")
-                    print(f"Response for {date}:", response.json())
-
                     data_rec = response.json()['data']
                     data_seggration = []
                     for elem in data_rec:
@@ -79,15 +77,18 @@ class AlgoScraper:
                     pivot_df = df.pivot(index='time', columns='range', values='price')
                     pivot_df = pivot_df.sort_index(axis=1)
                     pivot_df['Total'] = pivot_df.sum(axis=1)
-                    pivot_df.loc['Total'] = pivot_df.sum(axis=0)
+                    pivot_df['date'] = date  # Add date for tracking
+                    pivot_df.reset_index(inplace=True)  # Flatten index before concat
+                    self.df = pd.concat([self.df, pivot_df], ignore_index=True)
 
-                    print(f"Pivot Data for {date}:")
-                    path_of_the_file_to_save = f"{date}_straddle_heat_map.csv"
-                    pivot_df.to_csv(path_of_the_file_to_save, index=True)
                 else:
                     print(f"Failed to fetch data for {date}, Status Code: {response.status_code}")
             except Exception as e:
                 print(f"Error occurred for {date}: {e}")
+
+        # Save everything in one file
+        self.df.to_csv(self.file_name, index=False)
+        print(f"All data saved in: {self.file_name}")
 
 
 # Running the scraper
