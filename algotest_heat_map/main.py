@@ -8,7 +8,7 @@ class AlgoScraper:
     def __init__(self):
         self.url = "https://prices.algotest.in/straddle-mtm"
         self.df = pd.DataFrame()
-        self.file_name = 'straddle_heat_map_combined.csv'
+        self.file_name = 'nifty_straddle_heat_map_combined.csv'
         self.headers = {
             "accept": "application/json, text/plain, */*",
             "accept-language": "en-US,en;q=0.9",

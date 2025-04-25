@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04d1f26-c0f9-4a5a-a1b5-c83c1ec864bd" name="Changes" comment="update full function">
+    <list default="true" id="b04d1f26-c0f9-4a5a-a1b5-c83c1ec864bd" name="Changes" comment="ONE-FILE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algotest_heat_map/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/algotest_heat_map/main.py" afterDir="false" />
     </list>
@@ -46,6 +46,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.main'.executor&quot;: &quot;Debug&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.main2.0.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -115,6 +116,10 @@
       <workItem from="1744619239541" duration="58000" />
       <workItem from="1744629308823" duration="374000" />
       <workItem from="1744632161514" duration="2036000" />
+      <workItem from="1744634385579" duration="1061000" />
+      <workItem from="1744729126031" duration="627000" />
+      <workItem from="1745087036194" duration="1259000" />
+      <workItem from="1745599752674" duration="4816000" />
     </task>
     <task id="LOCAL-00001" summary="algo scraper">
       <option name="closed" value="true" />
@@ -132,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744629596729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ONE-FILE">
+      <option name="closed" value="true" />
+      <created>1744634435690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744634435690</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="algo scraper" />
     <MESSAGE value="update full function" />
-    <option name="LAST_COMMIT_MESSAGE" value="update full function" />
+    <MESSAGE value="ONE-FILE" />
+    <option name="LAST_COMMIT_MESSAGE" value="ONE-FILE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -161,11 +175,27 @@
           <line>14</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main'.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main'.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main'.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/stake_scraper$main2_0.coverage" NAME="main2.0 Coverage Results" MODIFIED="1742058286775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stake_scraper$main.coverage" NAME="main Coverage Results" MODIFIED="1744634181129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algotest_heat_map" />
+    <SUITE FILE_PATH="coverage/stake_scraper$main.coverage" NAME="main Coverage Results" MODIFIED="1744655139689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algotest_heat_map" />
+    <SUITE FILE_PATH="coverage/stake_scraper$main_.coverage" NAME="main' Coverage Results" MODIFIED="1745604620541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bse_fno" />
   </component>
 </project>
