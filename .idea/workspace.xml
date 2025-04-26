@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b04d1f26-c0f9-4a5a-a1b5-c83c1ec864bd" name="Changes" comment="ONE-FILE">
+    <list default="true" id="b04d1f26-c0f9-4a5a-a1b5-c83c1ec864bd" name="Changes" comment="intail-phase of the bse scraper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algotest_heat_map/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/algotest_heat_map/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main'.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.0.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main'.executor": "Debug",
+    "Python.main.executor": "Debug",
+    "Python.main2.0.executor": "Run",
+    "Python.main2.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vipul\PycharmProjects\stake-scraper\stake" />
@@ -120,6 +120,8 @@
       <workItem from="1744729126031" duration="627000" />
       <workItem from="1745087036194" duration="1259000" />
       <workItem from="1745599752674" duration="4816000" />
+      <workItem from="1745604836256" duration="7318000" />
+      <workItem from="1745619035743" duration="11121000" />
     </task>
     <task id="LOCAL-00001" summary="algo scraper">
       <option name="closed" value="true" />
@@ -145,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744634435690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="intail-phase of the bse scraper">
+      <option name="closed" value="true" />
+      <created>1745605074195</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745605074195</updated>
+    </task>
+    <task id="LOCAL-00005" summary="intail-phase of the bse scraper">
+      <option name="closed" value="true" />
+      <created>1745605082224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745605082224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +173,8 @@
     <MESSAGE value="algo scraper" />
     <MESSAGE value="update full function" />
     <MESSAGE value="ONE-FILE" />
-    <option name="LAST_COMMIT_MESSAGE" value="ONE-FILE" />
+    <MESSAGE value="intail-phase of the bse scraper" />
+    <option name="LAST_COMMIT_MESSAGE" value="intail-phase of the bse scraper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,12 +209,33 @@
           <line>31</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main'.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main'.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main2.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/bse_fno/main2.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/stake_scraper$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1745669171216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bse_fno" />
     <SUITE FILE_PATH="coverage/stake_scraper$main2_0.coverage" NAME="main2.0 Coverage Results" MODIFIED="1742058286775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stake_scraper$main.coverage" NAME="main Coverage Results" MODIFIED="1744655139689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algotest_heat_map" />
-    <SUITE FILE_PATH="coverage/stake_scraper$main_.coverage" NAME="main' Coverage Results" MODIFIED="1745604620541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bse_fno" />
+    <SUITE FILE_PATH="coverage/stake_scraper$main.coverage" NAME="main Coverage Results" MODIFIED="1745604919063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stake_scraper$main_.coverage" NAME="main' Coverage Results" MODIFIED="1745605115789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bse_fno" />
   </component>
 </project>
