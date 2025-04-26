@@ -161,6 +161,7 @@ class BseScraper:
             "__VIEWSTATEGENERATOR": updated_viewstate_generator,
             "__ASYNCPOST": "true",
         }
+        3
         fifth_resp = self.session.post(self.url, data=fifth_payload, headers=self.headers)
         soup = BeautifulSoup(fifth_resp.text, 'html.parser')
         # Convert the fifth response (or AJAX response) into full HTML and launch Selenium
