@@ -1,0 +1,268 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt3"><link type="text/css" rel="stylesheet" href="/rcdlstatus/vahan/javax.faces.resource/theme.css?ln=primefaces-parivahan"><link type="text/css" rel="stylesheet" href="/rcdlstatus/vahan/javax.faces.resource/grid-css.css;jsessionid=D926912596AFA9DEB59633D870E62919?ln=css"><link type="text/css" rel="stylesheet" href="/rcdlstatus/vahan/javax.faces.resource/layout.css;jsessionid=D926912596AFA9DEB59633D870E62919?ln=css"><link type="text/css" rel="stylesheet" href="/rcdlstatus/vahan/javax.faces.resource/css/bootstrap.min.css;jsessionid=D926912596AFA9DEB59633D870E62919?ln=bootstrap-3.3.7"><link type="text/css" rel="stylesheet" href="/rcdlstatus/vahan/javax.faces.resource/components.css;jsessionid=D926912596AFA9DEB59633D870E62919?ln=primefaces&amp;v=6.0"><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/jquery/jquery.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/jquery/jquery-plugins.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/core.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/components.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/keyfilter/keyfilter.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=primefaces&amp;v=6.0"></script><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/jsf.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=javax.faces"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta http-equiv="refresh" content="600;url=https://parivahan.gov.in/parivahan/">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+        <title>DL STATUS</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/rcdlstatus/vahan/javax.faces.resource/images/vahan_icon.ico">
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" media="all"><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/js/bootstrap.min.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=bootstrap-3.3.7"></script><script type="text/javascript" src="/rcdlstatus/vahan/javax.faces.resource/utils.js;jsessionid=D926912596AFA9DEB59633D870E62919?ln=js"></script>        
+        <script>
+            $(document).on("input", ".numeric", function() {
+                this.value = this.value.replace(/[^\d\.\-]/g, '');
+            });
+        </script>
+        <script>
+            function changemysize(myvalue) {
+                var div = document.getElementById("mymain");
+                div.style.fontSize = myvalue + "px";
+            }
+        </script>
+        <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all"></head><body id="mymain">
+<form id="form_rcdl" name="form_rcdl" method="post" action="/rcdlstatus/vahan/rcDlHome.xhtml;jsessionid=D926912596AFA9DEB59633D870E62919" enctype="application/x-www-form-urlencoded" aria-busy="false" style="position: relative;">
+<input type="hidden" name="form_rcdl" value="form_rcdl">
+
+            <div class="ui-grid ui-grid-responsive">
+                <div class="skip-navigation-section">
+                    <div class="container">
+                        <div class="right-position text-resize-section">
+                            <ul>
+                                <li class="skip-section"> 
+                                    <a href="https://parivahan.gov.in/parivahan" title="Home">
+                                        <i class="fa fa-home fa-text-color"></i> Home</a>
+                                </li>
+                                <li class="skip-section"> 
+                                    <a href="#main-content">
+                                        <i class="fa fa-arrow-down"></i> Skip to main content</a>
+                                </li>
+                                <li class="skip-section"> 
+                                    <a href="#navbar">
+                                        <i class="fa fa-arrow-down"></i> Skip to navigation</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="changemysize(10);" style="text-decoration: none;" id="decfont">A<sup>-</sup></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="changemysize(12);" style="text-decoration: none;" id="resetfont"> A</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="changemysize(16);" style="text-decoration: none;" id="incfont">A<sup>+</sup></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-header-section">
+                    <div class="container">
+                        <div class="inline-section vertical-right-divider">
+                            <div id="logo">
+                                <a href="https://parivahan.gov.in/parivahan" title="Home">
+                                    <img src="HTTPS://parivahan.gov.in/parivahan/sites/default/files/logo-parivahan-sewa-en.png" class="emblem-resize"></a>
+                            </div>
+                        </div>
+                        <div class="inline-section fix-width">
+                            <div class="govt-india">
+                                Government of India 
+                            </div>
+                            <div class="slogan-name">
+                                Ministry of Road Transport &amp; Highways       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-default navigation-background-nav" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav navbar-nav">
+                                <li data-id="347" data-level="1" data-type="menu_item" data-group="0" data-hidewcol="0" data-hidesub="0" class="tb-megamenu-item level-1 mega">
+                                    <a href="https://parivahan.gov.in/parivahan">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <div class="top-space bottom-space"><div id="form_rcdl:rcdl_pnl" class="ui-panel ui-widget ui-widget-content ui-corner-all datatable-panel" data-widget="widget_form_rcdl_rcdl_pnl"><div id="form_rcdl:rcdl_pnl_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Know Your Driving Licence Status</span></div><div id="form_rcdl:rcdl_pnl_content" class="ui-panel-content ui-widget-content"><div id="form_rcdl:j_idt18" class="ui-messages ui-widget" aria-live="polite"></div><div id="form_rcdl:j_idt20" class="ui-outputpanel ui-widget">
+                                <div class="ui-grid-row bottom-space">
+                                    <div class="ui-grid-col-4 resp-blank-height"></div>
+                                    <div class="ui-grid-col-2">
+                                        <label class="field-label resp-label-section"><label id="form_rcdl:j_idt22" class="ui-outputlabel ui-widget top-space field-label-mandate" for="form_rcdl:tf_dlNO">Driving Licence No.<span class="ui-outputlabel-rfi">*</span></label>
+                                        </label>
+                                    </div>
+                                    <div class="ui-grid-col-3"><input id="form_rcdl:tf_dlNO" name="form_rcdl:tf_dlNO" type="text" value="MH-0320140015542" autocomplete="off" maxlength="20" placeholder="Enter Driving Licence No." size="16" onchange="PrimeFaces.ab({s:&quot;form_rcdl:tf_dlNO&quot;,e:&quot;valueChange&quot;,p:&quot;form_rcdl:tf_dlNO&quot;,u:&quot;form_rcdl:tf_dlNO&quot;});" disabled="disabled" aria-required="true" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled input" role="textbox" aria-disabled="true" aria-readonly="false">
+                                    </div>
+                                </div>
+                                <div class="ui-grid-row bottom-space">
+                                    <div class="ui-grid-col-4 resp-blank-height"></div>
+                                    <div class="ui-grid-col-2">
+                                        <label class="field-label resp-label-section right-position"><label id="form_rcdl:j_idt28" class="ui-outputlabel ui-widget top-space field-label-mandate" for="form_rcdl:tf_dob_input">Date Of Birth<span class="ui-outputlabel-rfi">*</span></label>
+                                        </label>
+                                    </div>
+                                    <div class="ui-grid-col-3"><span id="form_rcdl:tf_dob" class="ui-calendar input"><input id="form_rcdl:tf_dob_input" name="form_rcdl:tf_dob_input" type="text" aria-required="true" value="21-06-1992" class="ui-inputfield ui-widget ui-state-default ui-corner-all ui-state-disabled" readonly="readonly" disabled="disabled" autocomplete="off" maxlength="12" placeholder="SELECT DATE OF BIRTH" onchange="PrimeFaces.ab({s:&quot;form_rcdl:tf_dob&quot;,e:&quot;valueChange&quot;,p:&quot;form_rcdl:tf_dob&quot;,u:&quot;form_rcdl:tf_dob&quot;,ps:true});" aria-labelledby="form_rcdl:j_idt28" role="textbox" aria-disabled="true" aria-readonly="true"></span>
+                                    </div>
+                                </div></div>
+                            
+                            <div class="ui-grid-row bottom-space center-position">
+                                <div class="ui-grid-col-12"><button id="form_rcdl:j_idt50" name="form_rcdl:j_idt50" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-focus" onclick="PrimeFaces.ab({s:&quot;form_rcdl:j_idt50&quot;,u:&quot;form_rcdl:pnl_show form_rcdl:pg_show form_rcdl:rcdl_pnl&quot;,onst:function(cfg){PF('block_ui').show();;},onsu:function(data,status,xhr){PF('block_ui').hide();;}});return false;" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">Check Status</span></button><button id="form_rcdl:rest_bt" name="form_rcdl:rest_bt" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="" type="submit" role="button" aria-disabled="false"><span class="ui-button-text ui-c">Reset</span></button>                    
+                                </div>
+                            </div><div id="form_rcdl:pnl_show" class="ui-outputpanel ui-widget datatable-panel"><span id="form_rcdl:pg_show">
+
+    
+    <div class="ui-grid ui-grid-responsive">
+        <div class="ui-grid-col-12">
+            
+            <div class="ui-grid ui-grid-responsive"><div id="form_rcdl:dlPanel" class="ui-outputpanel ui-widget"><div id="form_rcdl:j_idt73" class="ui-outputpanel ui-widget">
+                        <div class="font-bold top-space bottom-space text-capitalize center-position text-underline">
+                            Details Of Driving License: MH-0320140015542
+                        </div>
+                        <table class="table table-responsive table-striped table-condensed table-bordered">
+                            <tbody><tr>
+                                <td style="width: 20%;"><span class="font-bold">Current Status</span></td>
+                                <td><span class="">ACTIVE</span></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%;"><span class="font-bold">Holder's Name</span></td>
+                                <td>A*M*DA*I S*A*K*</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%;"><span class="font-bold">Old / New DL No.</span></td>
+                                <td>NA</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%;"><span class="font-bold">Source Of Data</span></td>
+                                <td>SARATHI</td>
+                            </tr>
+                        </tbody></table>
+                        <div class="font-bold top-space bottom-space text-capitalize center-position text-underline">
+                            Driving License Initial Details
+                        </div>
+                        <table class="table table-responsive table-striped table-condensed table-bordered">
+                            <tbody><tr>
+                                <td style="width: 20%;"><span class="font-bold">Initial Issue Date</span></td>
+                                <td>25-Apr-2014</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%;"><span class="font-bold">Initial Issuing Office</span></td>
+                                <td>RTO,MUMBAI (EAST)</td>
+                            </tr>
+                        </tbody></table>
+                            <div class="font-bold top-space bottom-space text-capitalize center-position text-underline">
+                                Driving License Endorsed Details
+                            </div>
+                            <table class="table table-responsive table-striped table-condensed table-bordered">
+                                <tbody><tr>
+                                    <td style="width: 20%;"><span class="font-bold">Last Endorsed Date</span></td>
+                                    <td>06-Aug-2018</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><span class="font-bold">Last Endorsed Office</span></td>
+                                    <td>RTO,MUMBAI (EAST)</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;"><span class="font-bold">Last Completed Transaction</span></td>
+                                    <td>ISSUE OF DRIVING LICENCE , RENEWAL OF DL</td>
+                                </tr>
+                            </tbody></table>
+                        <div class="font-bold top-space bottom-space text-capitalize center-position text-underline">
+                            Driving License Validity Details
+                        </div>
+                        <table class="table table-responsive table-striped table-condensed table-bordered data-table" style="margin-bottom: 0px;">
+                            <tbody><tr>
+                                <td style="width: 33%;"><span class="font-bold">Non-Transport</span></td>
+                                <td style="width: 33%;"><span class="font-bold">From: </span>25-Apr-2014</td>
+                                <td style="width: 33%;"><span class="font-bold">To: </span>24-Apr-2034</td>
+                            </tr>
+                            <tr>
+                                <td style="width: 33%;"><span class="font-bold">Transport</span></td>
+                                <td style="width: 33%;"><span class="font-bold">From: </span>01-Aug-2018</td>
+                                <td style="width: 33%;"><span class="font-bold">To: </span>31-Jul-2021</td>
+                            </tr>
+                        </tbody></table>
+                        <table class="table table-responsive table-striped table-condensed table-bordered data-table" style="margin-top: 0px;">
+                            <tbody><tr>
+                                <td style="width: 25%;"><span class="font-bold">Hazardous Valid Till</span></td>
+                                <td style="width: 25%;">NA</td>
+                                <td style="width: 25%;"><span class="font-bold">Hill Valid Till</span></td>
+                                <td style="width: 25%;">NA</td>
+                            </tr>
+                        </tbody></table>
+                        <div class="font-bold top-space bottom-space text-capitalize center-position text-underline">
+                            Class Of Vehicle Details
+                        </div><div id="form_rcdl:j_idt139" class="ui-datatable ui-widget top-space bottom-space" style="width: 100%;"><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="form_rcdl:j_idt139_head"><tr role="row"><th id="form_rcdl:j_idt139:j_idt140" class="ui-state-default" role="columnheader" aria-label="COV Category"><span class="ui-column-title">COV Category</span></th><th id="form_rcdl:j_idt139:j_idt142" class="ui-state-default" role="columnheader" aria-label="Class Of Vehicle"><span class="ui-column-title">Class Of Vehicle</span></th><th id="form_rcdl:j_idt139:j_idt145" class="ui-state-default" role="columnheader" aria-label="COV Issue Date"><span class="ui-column-title">COV Issue Date</span></th></tr></thead><tbody id="form_rcdl:j_idt139_data" class="ui-datatable-data ui-widget-content"><tr data-ri="0" class="ui-widget-content ui-datatable-even" role="row"><td role="gridcell">TR</td><td role="gridcell">LMV-TR</td><td role="gridcell">25-Apr-2014</td></tr><tr data-ri="1" class="ui-widget-content ui-datatable-odd" role="row"><td role="gridcell">TR</td><td role="gridcell">3W-GV</td><td role="gridcell">25-Apr-2014</td></tr><tr data-ri="2" class="ui-widget-content ui-datatable-even" role="row"><td role="gridcell">NT</td><td role="gridcell">MCWG</td><td role="gridcell">25-Apr-2014</td></tr></tbody></table></div></div></div></div>
+            </div>
+            
+        </div>
+    </div></span></div><div id="form_rcdl:j_idt52" class="ui-outputpanel ui-widget">
+                                <div class="ui-grid-row">
+                                    <div class="ui-grid-col-1 right-position right-space" style="width: 5% !important">
+                                        <b style="font-size: 14px !important"><u>Note:</u> - </b>
+                                    </div>
+                                    <div class="ui-grid-col-11">
+                                        <span class="text-red" style="font-size: 13px !important">Driving Licence number can be entered in any of the following formats: DL-1420110012345 or DL14 20110012345<br>
+                                            Total number of input characters should be exactly 16 (including space or '-').<br>
+                                            If you hold an old driving license with a different format, please convert the format as per below rule before entering.<br>
+                                            <b>SS-RRYYYYNNNNNNN</b> OR  <b>SSRR YYYYNNNNNNN</b><br>
+                                            Where<br>
+                                            <b>SS</b> - Two character State Code (like RJ for Rajasthan, TN for Tamil Nadu etc)<br>
+                                            <b>RR</b> - Two digit RTO Code<br>
+                                            <b>YYYY</b> - 4-digit Year of Issue (For Example: If year is mentioned in 2 digits, say 99, then it should be converted to 1999. Similarly use 2012 for 12).<br>
+                                            Rest of the numbers are to be given in 7 digits. If there are less number of digits, then additional 0's(zeros) may be added to make the total 7.<br>
+                                            For example: If the Driving Licence Number is  RJ-13/DLC/12/ 123456 then please enter RJ-1320120123456 OR RJ13 20120123456.</span>
+                                    </div>
+                                </div></div></div></div>
+                    </div>
+
+                    <div class="center-position"> 
+                        <h1 class="header-main text-underline">Terms Of Uses</h1>
+                        <div>
+                            <ul class="borderstyle">
+                                <li>The content on this portal is meant for sharing information regarding vehicles on the basis of information available on centralized VAHAN and vehicle National Register. Using content of this portal for any commercial purpose or any derivative work or misuse of any kind is strictly prohibited and may invite legal consequences. </li>
+                                <li>The content can be removed from the portal without notice and at any time as per Ministry of Road Transport and Highways/NIC direction.</li>
+                                <li>Ministry of Road Transport and Highways/NIC shall not be held responsible for any interactions/passing of information(s) etc. between any user via e-mail, chat and any other mediation with another user. Ministry of Road Transport and Highways/NIC has no obligation to monitor any such disputes arising between the users and shall not be party to such dispute/litigation etc.</li>
+                                <li>These terms and conditions shall be governed by and construed in accordance with the Indian Laws. Any dispute arising under these terms and conditions shall be subject to the jurisdiction of the courts of Indian territory only.</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-row top-space">
+                    <div class="ui-grid-col-12"><link type="text/css" rel="stylesheet" href="/rcdlstatus/vahan/javax.faces.resource/theme.css?ln=primefaces-parivahan"><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="/rcdlstatus/images/vahan_icon.ico">
+        <div class="vahan-footer-section">
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-3 left-position">
+
+                    <div class="inline-section footer-line-height right-space">
+                        <a href="http://www.nic.in/" target="_blank"><img id="form_rcdl:j_idt65" src="/rcdlstatus/vahan/javax.faces.resource/nic-logo.png;jsessionid=D926912596AFA9DEB59633D870E62919?ln=images" alt=""></a>
+                    </div>
+                </div>
+                <div class="ui-grid-col-6 center-position">
+                    <div class="inline-section top-space">
+                        This Website belongs to Ministry of Road Transport &amp; Highways (MoRTH)
+                        <br>
+                        Government of India
+                    </div>
+                </div>
+                <div class="ui-grid-col-3 right-position footer-line-height">
+
+                    <div class="inline-section footer-line-height">
+                        <a href="http://www.digitalindia.gov.in/" target="_blank"><img id="form_rcdl:j_idt67" src="/rcdlstatus/vahan/javax.faces.resource/digital-india.jpg;jsessionid=D926912596AFA9DEB59633D870E62919?ln=images" alt="" style="width: 75px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    </div>
+                </div>
+            </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="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" autocomplete="off">
+<div id="form_rcdl:j_idt55_blocker" class="ui-blockui ui-widget-overlay ui-helper-hidden" style="z-index: 1003; display: none;"></div><div id="form_rcdl:j_idt55" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow" style="left: 365.5px; top: 482.5px; z-index: 1004; display: none;"><img id="form_rcdl:j_idt56" src="/rcdlstatus/vahan/javax.faces.resource/ajax_loader_blue.gif;jsessionid=D926912596AFA9DEB59633D870E62919?ln=images" alt="" width="30%" height="40%"></div></form>
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 41.4062px; left: 509.656px; display: none; z-index: 1002;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Previous"><span class="ui-icon ui-icon-circle-triangle-w">Previous</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><select class="ui-datepicker-month" data-handler="selectMonth" data-event="change"><option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option><option value="3">Apr</option><option value="4">May</option><option value="5" selected="selected">Jun</option><option value="6">Jul</option><option value="7">Aug</option><option value="8">Sep</option><option value="9">Oct</option><option value="10">Nov</option><option value="11">Dec</option></select><select class="ui-datepicker-year" data-handler="selectYear" data-event="change"><option value="1900">1900</option><option value="1901">1901</option><option value="1902">1902</option><option value="1903">1903</option><option value="1904">1904</option><option value="1905">1905</option><option value="1906">1906</option><option value="1907">1907</option><option value="1908">1908</option><option value="1909">1909</option><option value="1910">1910</option><option value="1911">1911</option><option value="1912">1912</option><option value="1913">1913</option><option value="1914">1914</option><option value="1915">1915</option><option value="1916">1916</option><option value="1917">1917</option><option value="1918">1918</option><option value="1919">1919</option><option value="1920">1920</option><option value="1921">1921</option><option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992" selected="selected">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option></select></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">S</span></th><th scope="col"><span title="Monday">M</span></th><th scope="col"><span title="Tuesday">T</span></th><th scope="col"><span title="Wednesday">W </span></th><th scope="col"><span title="Thursday">T</span></th><th scope="col"><span title="Friday">F </span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">S</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">4</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">5</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">6</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">11</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">12</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">13</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">17</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">18</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">19</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">20</a></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default ui-state-active" href="#">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">26</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">27</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="5" data-year="1992"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></body></html>
